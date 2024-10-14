@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Website Design </title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font awesome Cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <div class="wrapper">
+      <div class="heading head">
+        <div class="logo-area">
+          <img src="img/logo.png" alt="">
+        </div>
+
+        <!------ Navigation area ---->
+
+        <nav id="nav" class="nav-bar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="details.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+
+          </ul>
+        </nav>
+
+
+        <!------ Cart area------>
+        <div class="cart-area">
+              <a href="cart.html"><img src="img/cart.png" alt=""></a>
+
+          <!------ Hamburger area------>
+
+          <!------  menu icon Open------>
+          <div class="hamburger" id="hamburger">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="menu-icon open">
+              <path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z"></path>
+            </svg>
+
+
+
+            <!-- menu icon close -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="menu-icon close">
+              <path
+                d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z">
+              </path>
+            </svg>
+
+          </div>
+
+        </div>
+
+        <!-- mobile menu -->
+        <div class="mobile-menu">
+          <div>
+
+            <img src="img/red-store.png" alt="" class="mobile-logo">
+          </div>
+          <!-- mobile menu -->
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="details.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+          </nav>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- -----Hero Area------ -->
+    <div class="hero-area wrapper" id="home">
+      <div class="hero-content">
+        <h1>Give Your Workout <br> A New Style!</h1>
+        <p>Success is not always about greatness.It's about consistency. Consistence <br> hard work gains success.
+          Greatness
+          will come</p>
+
+        <a href="" class="btn">Explore Now &#8594</a>
+      </div>
+      <div class="hero-img">
+        <img src="img/football.png" alt="">
+      </div>
+    </div>
+    </div>
+  </header>
+
+<main>
+<div class="wrapper">
+  <div class="products-container">
+    <h2>Product Price Calculator</h2>
+    <!-- Product Input Form -->
+    <div class="product-add">
+      <input type="text" id="product-description" placeholder="Product Description">
+      <input type="number" id="product-price" placeholder="Price" min="0">
+      <input type="number" id="product-quantity" placeholder="Quantity" min="1" value="1">
+      <button id="add-product">Add to Cart</button>
+     
+    </div>
+  </div>
+  
+  <div class="cart-container">
+    <h2>Product Details</h2>
+    <div class="cart-items">
+      <!-- This section will display product details dynamically -->
+    </div>
+    <div class="cart-total">
+      <p>Total: $<span id="total-price">0</span></p>
+    </div>
+  </div>
+</div>
+
+</main>
+
+  <footer>
+  
+    <div class="footer">
+      <div class="category-footer wrapper">
+        <div class="row-footer">
+          <h3>Download Our App</h3>
+          <P>Download App for Android and ios mobile phone</P>
+          <div class="footer-images">
+            <img src="img/app-store.png" alt="" class="footer-logo">
+            <img src="img/google-play.png" alt="" class="footer-logo">
+          </div>
+        </div>
+        <div class="row-footer">
+          <img src="img/red-store.png" alt="" class="footer-logo">
+          <P>Our purpose is to sustainably make the pleasure and benefits of sports accessible to the many </P>
+        </div>
+        <div class="row-footer">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+          </ul>
+        </div>
+        <div class="row-footer">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+            <li>Twitter</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p>Copyright 2024 - Saim Hossain</p>
+    </div>
+  
+  </footer>
+<script src="app.js"></script>
+  </body>
+  </html>
